@@ -1,3 +1,3 @@
 # chikibevchik.github.io
-#eeeeeeeeeeee lmao
+#lmao
 # ayo
