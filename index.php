@@ -42,7 +42,7 @@
             }
         </script>
         </head>
-        <body background="images/bg.jpg">
+        <body logo1.png background="images/bg.jpg">
 <table border="1" align="center" cellpadding="10">
 <tr>
     <td background="images/bg-3.jpg" colspan="2" height="150" align="right"><font size="5" color="Maroon"><h1 class="shadowtext">Сайт web-студії "Web-DECO"</h1></font></td>
