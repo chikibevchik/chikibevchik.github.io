@@ -42,7 +42,17 @@
             }
         </script>
         </head>
-        <body logo1.png background="images/bg.jpg">
+        <body background="images/bg.jpg">
+           <?php
+           $log_path = 'log.txt';
+           $user_ip = getenv(REMOTE_ADDR);
+           $user_brouser = getenv(HTTP_USER_AGENT);
+           $curent_time=date("ymd H:i:s");
+           $log_string="$user_ip|$user_brouser|$curent_time|\r\n";
+           $file=fopen($log_path,"a");
+           fwrite($file,$log_string,strlen($log_string));
+           fclose($file);
+           ?> 
 <table border="1" align="center" cellpadding="10">
 <tr>
     <td background="images/bg-3.jpg" colspan="2" height="150" align="right"><font size="5" color="Maroon"><h1 class="shadowtext">Сайт web-студії "Web-DECO"</h1></font></td>
