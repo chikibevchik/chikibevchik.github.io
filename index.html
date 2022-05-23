@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Сайт web-студії "Web-DECO"</title>
+        <script src="js/clock1.js"></script>
         <script type="text/javascript">
             function send()
             {
@@ -34,6 +35,12 @@
                 font-size: 2em;
             }
         </style>
+        <script>
+            window.onload = function()
+            {
+                setInterval(clockPainting, 1000);
+            }
+        </script>
         </head>
         <body background="images/bg.jpg">
 <table border="1" align="center" cellpadding="10">
@@ -52,6 +59,8 @@
 </tr>
 <tr>
 <td width="30%" valign="top" >
+    <center><canvas id="canvas" height="120" width="120"></canvas></center>
+    <hr>
     <font size="5" color="navy"><h2>Новини</h2></font>
     <font size="5" >
         <ul>
@@ -81,7 +90,7 @@
             </tr>
             <tr>
                 <td><font color="green">Пароль</font> : </td>
-                <td>input type="password" size="10" maxlength="20" name="password"></td>
+                <td><input type="password" size="10" maxlength="20" name="password"></td>
             </tr>
         </table>
         
